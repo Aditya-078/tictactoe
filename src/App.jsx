@@ -1,9 +1,9 @@
 import React from "react";
+import Board  from "./components/Board";
 
 export default () => (
-  <>
-    <h1>Welcome to React Vite Micro App!</h1>
-    <p>Hard to get.</p>
-    
-  </>
+  <div>
+    <h1>TIC TAC TOE</h1>
+    <Board />
+  </div>
 );
