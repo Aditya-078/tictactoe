@@ -4,6 +4,7 @@ import History from './History';
 import StatusMessage from './components/StatusMessage';
 import { calculateWinner } from './helpers';
 
+
 import './styles/root.scss';
 
 const NEW_GAME = [{ board: Array(9).fill(null), isXNext: true }];
@@ -48,6 +49,7 @@ const App = () => {
 
   return (
     <div className="app">
+    
       <h1>
         TIC <span className="text-green">TAC</span> TOE
       </h1>
@@ -64,12 +66,17 @@ const App = () => {
       >
         Start new game
       </button>
-      
       <h2 style={{ fontWeight: 'normal' }}>Current game history</h2>
       <History history={history} moveTo={moveTo} currentMove={currentMove} />
       <div className="bg-balls" />
+      <h3 class='madeby'>
+        
+        
+        Made By Aditya ENJOY!!!</h3>
     </div>
+    
   );
+ 
 };
 
 export default App;
